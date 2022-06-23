@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="香水電商網頁HTML、CSS應用,RWD切版、SCSS應用">
+    <meta property="og:title" content="香水電商RWD網頁切版"/>
+    <meta property="og:image" content="./images/index10.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="香水電商網頁HTML、CSS應用,RWD切版、SCSS應用" />
+    <link rel="shortcut icon" href="./images/Parfume.ico">
+    <title>香水電商</title>
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/jquery3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+
+
+</head>
+
+<body>
+    <!-- container Start -->
+    <div class="container">
+        <!-- header起始 -->
+        <div class="header">
+            <h1><a href="./index.html"><img src="./images/d’Perfume.png" alt="d’Perfume"></a></h1>
+            <ul class="menu">
+                <li> <a href="./product.html"><i class="fa-solid fa-shirt"></i>Product</a></li>
+                <li> <a href="./login.html"><i class="fa-solid fa-user"></i>login</a></li>
+                <li> <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+                <li class="desktop-none"> <a href="#"><i class="fa-solid fa-blog desktop-none"></i>Blog</a></li>
+                <li class="desktop-none"> <a href="#"><i class="fa-solid fa-blog desktop-none"></i>Contact</a></li>
+                <li class="desktop-none"> <a href="./Mypage.html"><i class="fa-solid fa-user-large desktop-none"></i>Mypage</a></li>
+                <li class="cart-shopping-moblie-li"> <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart(3)</a>
+                </li>
+            </ul>
+            <div class="header-cart-moblie">
+                <a href="#" class="moblie-cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                    <h2>3</h2>
+                </a>
+            </div>
+            <div class="hum-icon">
+                <input type="checkbox" id="menu-check" class="menu-check">
+                <label for="menu-check" class="menu-open-button">
+                    <div class="ham-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="product-menu">
+            <ul>
+                <li> <a href="./popular-product-page.html">CHANEL</a> </li>
+                <li> <a href="#">Jo Malone</a> </li>
+                <li> <a href="#">Curology</a> </li>
+                <li> <a href="#">Dior</a> </li>
+                <li> <a href="#">Chloe</a> </li>
+                <li> <a href="#">ZARA</a> </li>
+            </ul>
+        </div>
+        <!-- header結尾 -->
+
+        <!-- 內容產品content起始 -->
+        <div class="content">
+            <!--會員資料頁面開始 -->
+            <div class="member-page">
+                <!--會員資料選單開始 -->
+                <div class="member-menu">
+                    <ul>
+                        <h2>會員中心</h2>
+                        <li> <a href="#">會員資料修改</a></li>
+                        <li> <a href="#">訂單查詢</a></li>
+                        <li> <a href="#">退／換貨申請</a></li>
+                    </ul>
+                </div>
+                <!--會員資料選單結束 -->
+                <!--會員資料修改頁面開始 -->
+                <div class="member-profile">
+                    <!--會員資料中間頁面開始 -->
+                    <div class="member-data-modification">
+                        <form action="">
+                            <ul>
+                                <h2>個人資料修改</h2>
+                                <li class="input-account">
+                                    <label for="">會員帳號</label>
+                                    <input type="text" value="email@example.com">
+                                </li>
+                                <li>
+                                    <label for="name">姓名</label>
+                                    <input type="name" value="" name="name" id="name" placeholder="會員姓名">
+                                </li>
+                                <li><label for="sex">會員性別</label>
+                                    <select name="sex" id="sex">
+                                        <option value="male">男</option>
+                                        <option value="Female">女</option>
+                                    </select>
+                                </li>
+                                <li><label for="mail">電子信箱</label>
+                                    <input type="mail" value="" name="mail" id="mail" placeholder="email@example.com">
+                                </li>
+                                <li><label for="tel">手機電話</label>
+                                    <input type="tel" value="" name="tel" id="tel" placeholder="電話號碼">
+                                </li>
+                                <li class="mobile-label">
+                                    <label for="">聯絡地址</label>
+                                    <ul class="address-list">
+                                        <li>
+                                            <select name="address" id="address">
+                                                <option value="" selected disabled>台灣及離島</option>
+                                                <option value="">台灣</option>
+                                                <option value="">澎湖</option>
+                                                <option value="">金門</option>
+                                                <option value="">馬祖</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <div class="address-col">
+                                                <select name="county" id="county">
+                                                    <option value="" selected disabled>選擇</option>
+                                                    <option value="">台北</option>
+                                                    <option value="">基隆</option>
+                                                    <option value="">桃園</option>
+                                                    <option value="">台中</option>
+                                                    <option value="">台南</option>
+                                                    <option value="">高雄</option>
+                                                    <option value="">墾丁</option>
+                                                    <option value="">屏東</option>
+                                                    <option value="">花蓮</option>
+                                                </select>
+                                                <select name="Area" id="Area">
+                                                    <option value="" selected disabled>選擇</option>
+                                                    <option value="">中正區</option>
+                                                    <option value="">大同區</option>
+                                                    <option value="">中山區</option>
+                                                    <option value="">松山區</option>
+                                                    <option value="">大安區</option>
+                                                    <option value="">萬華區</option>
+                                                    <option value="">信義區</option>
+                                                    <option value="">士林區</option>
+                                                    <option value="">北投區</option>
+                                                    <option value="">內湖區</option>
+                                                    <option value="">南港區</option>
+                                                    <option value="">文山區</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <label for="">
+                                                <input type="text" name="" id="" placeholder="請輸入地址">
+                                            </label>
+                                        </li>
+                                        <li class="address-checkbox">
+                                            <div class="address-checkbox-label">
+                                                <label for="">
+                                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                                    <p>我願意收到最新優惠情報</p>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mobile-label">
+                                    <label for="">聯絡地址</label>
+                                    <ul class="address-list">
+                                        <li>
+                                            <select name="address" id="address">
+                                                <option value="" selected disabled>台灣及離島</option>
+                                                <option value="">台灣</option>
+                                                <option value="">澎湖</option>
+                                                <option value="">金門</option>
+                                                <option value="">馬祖</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <div class="address-col">
+                                                <select name="county" id="county">
+                                                    <option value="" selected disabled>選擇</option>
+                                                    <option value="">台北</option>
+                                                    <option value="">基隆</option>
+                                                    <option value="">桃園</option>
+                                                    <option value="">台中</option>
+                                                    <option value="">台南</option>
+                                                    <option value="">高雄</option>
+                                                    <option value="">墾丁</option>
+                                                    <option value="">屏東</option>
+                                                    <option value="">花蓮</option>
+                                                </select>
+                                                <select name="Area" id="Area">
+                                                    <option value="" selected disabled>選擇</option>
+                                                    <option value="">中正區</option>
+                                                    <option value="">大同區</option>
+                                                    <option value="">中山區</option>
+                                                    <option value="">松山區</option>
+                                                    <option value="">大安區</option>
+                                                    <option value="">萬華區</option>
+                                                    <option value="">信義區</option>
+                                                    <option value="">士林區</option>
+                                                    <option value="">北投區</option>
+                                                    <option value="">內湖區</option>
+                                                    <option value="">南港區</option>
+                                                    <option value="">文山區</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <label for="">
+                                                <input type="text" name="" id="" placeholder="請輸入地址">
+                                            </label>
+                                        </li>
+                                        <li class="check-input">
+                                            <label for="check-input">
+                                                <button>確認修改</button>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="change-password">
+                                    <ul class="password-list">
+                                        <h2>修改密碼</h2>
+                                        <li>
+                                            <label for="">舊密碼</label>
+                                            <input type="password" value="" name="" id="" placeholder="請輸入舊密碼">
+
+                                        </li>
+                                        <li>
+                                            <label for="">新密碼</label>
+                                            <input type="password" value="" name="" id="" placeholder="請輸入新密碼">
+
+                                        </li>
+                                        <li>
+                                            <label for="">確認密碼</label>
+                                            <input type="password" value="" name="" id="" placeholder="請確認新密碼">
+                                        </li>
+                                        <li class="password-button">
+                                            <label for=""></label>
+                                            <button>修改密碼</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <!--會員資料中間頁面結束 -->
+                    <!--會員資料右側頁面開始 -->
+                    <div class="member-total-data">
+                        <ul>
+                            <div class="member-total-data-h2">
+                                <h2><i class="fa-solid fa-user-large"></i>會員編碼</h2>
+                                <p>T00020080615</p>
+                            </div>
+                            <li>
+                                <h2>購物車</h2>
+                                <p>56</p>
+                            </li>
+                            <li>
+                                <h2>我的收藏</h2>
+                                <p>23</p>
+                            </li>
+                            <li>
+                                <h2>完成訂單</h2>
+                                <p>56</p>
+                            </li>
+                            <li>
+                                <h2>會員紅利</h2>
+                                <p>56</p>
+                            </li>
+                            <li class="Invitation-code">
+                                <h2>邀請碼</h2>
+                                <p>TK2075</p>
+                                <span>新戶輸入邀請碼即可獲贈紅利點數1000點</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--會員資料右側頁面結束 -->
+                </div>
+                <!--會員資料修改頁面結束 -->
+            </div>
+            <!--會員資料頁面結束 -->
+        </div>
+        <!-- 內容產品content結束 -->
+
+        <!-- footer起始 -->
+        <div class="footer">
+            <div class="footer-background">
+
+                <div class="search-input">
+                    <h2>記得 <p>訂閱以獲取更多資訊！</p>
+                    </h2>
+                    <form action="" method="post">
+                        <input type="search" placeholder="Your email address" name="search">
+                        <button class="search-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>
+                        <h2> <a href="./index.html"><img src="./images/logo-footer-2x.png" alt="d’Perfume"></a></h2>
+                        <p>© 2020. All Rights Reserved.</p>
+                    </li>
+                    <li class="footer-menu-list">
+                        <ul>
+                            <li> <a href="./product.html">Product</a> </li>
+                            <li> <a href="#">Blog</a> </li>
+                            <li> <a href="#">Contact</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer結尾 -->
+    </div>
+    <!-- container End -->
+</body>
+
+</html>
