@@ -1,0 +1,130 @@
+
+//文字隱藏//
+@mixin hiden-text{
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+//文本居中
+@mixin center($height:100%){
+    height: $height;
+    line-height: $height;
+    text-align: center
+    }
+// .text{
+// color: #fff;
+// @include center(30px)
+//  }
+
+
+//清除浮動//
+@mixin clearfix() {
+    &:before,
+    &:after {
+    content: "";
+    display: table;
+    }
+    &:after {
+    clear: both;
+    }
+    }
+
+
+
+//flex//
+@mixin flex ($direction: row, $justify-content: flex-start, $align-items: flex-start,$flex-wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+    }
+// 使用方式:
+// .box {
+// @include flex(row,flex-start,flex-start,wrap)
+// }
+
+
+
+//多行省略
+@mixin multiEllipsis($line:2){
+        overflow : hidden;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $line;
+        -webkit-box-orient: vertical;
+        }
+// 使用方式:
+// .text{
+//     @include multiEllipsis(3)  // 表示只顯示三行,多出來的顯示省略號
+//     }*
+
+
+//文本不換行
+@mixin no-wrap(){
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    }
+// 使用方法:
+// .box {
+// @include no-wrap()
+// }  
+
+
+//透明度
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+    }
+// 使用方式:
+// .box {
+// @include opacity(0.8);
+// }
+
+
+//毛玻璃效果
+@mixin blur($blur: 10px) {
+    -webkit-filter: blur($blur);
+    -moz-filter: blur($blur);
+    -o-filter: blur($blur);
+    -ms-filter: blur($blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='${blur}');
+    filter: blur($blur);
+    *zoom: 1;
+    }
+// 使用方式: 
+// .box {
+// @include blur(10px)
+// }
+
+//鼠標hover顯示下劃線
+@mixin hoverLine($height:2px,$color:$color-text-primary){
+    position: relative;
+    &:hover::after{
+    content: '';
+    position: absolute;
+    height:$height;
+    width: 100%;
+    background-color: $color;
+    bottom: 0;
+    left: 0;
+    }
+    }
+// 使用方式:
+// span{
+// @include hoverLine(2px,$color-white);
+// }
+
+//背景固定
+@mixin bgfix{
+    overflow: hidden;
+    background-image: url();
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}

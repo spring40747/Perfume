@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="香水電商網頁HTML、CSS應用,RWD切版、SCSS應用">
+    <meta property="og:title" content="香水電商RWD網頁切版"/>
+    <meta property="og:image" content="./images/index10.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="香水電商網頁HTML、CSS應用,RWD切版、SCSS應用" />
+    <link rel="shortcut icon" href="./images/Parfume.ico">
+    <title>香水電商</title>
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/jquery3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+
+
+</head>
+
+<body>
+    <!-- container Start -->
+    <div class="container">
+        <!-- header起始 -->
+        <div class="header">
+            <h1><a href="./index.html"><img src="./images/d’Perfume.png" alt="d’Perfume"></a></h1>
+            <ul class="menu">
+                <li> <a href="./product.html"><i class="fa-solid fa-shirt"></i>Product</a></li>
+                <li> <a href="./login.html"><i class="fa-solid fa-user"></i>login</a></li>
+                <li> <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+                <li class="desktop-none"> <a href="#"><i class="fa-solid fa-blog desktop-none"></i>Blog</a></li>
+                <li class="desktop-none"> <a href="#"><i class="fa-solid fa-blog desktop-none"></i>Contact</a></li>
+                <li class="desktop-none"> <a href="./Mypage.html"><i class="fa-solid fa-user-large desktop-none"></i>Mypage</a></li>
+                <li class="cart-shopping-moblie-li"> <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart(3)</a>
+                </li>
+            </ul>
+            <div class="header-cart-moblie">
+                <a href="#" class="moblie-cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                    <h2>3</h2>
+                </a>
+            </div>
+            <div class="hum-icon">
+                <input type="checkbox" id="menu-check" class="menu-check">
+                <label for="menu-check" class="menu-open-button">
+                    <div class="ham-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="product-menu">
+            <ul>
+                <li> <a href="./popular-product-page.html">CHANEL</a> </li>
+                <li> <a href="#">Jo Malone</a> </li>
+                <li> <a href="#">Curology</a> </li>
+                <li> <a href="#">Dior</a> </li>
+                <li> <a href="#">Chloe</a> </li>
+                <li> <a href="#">ZARA</a> </li>
+            </ul>
+        </div>
+        <!-- header結尾 -->
+
+        <!-- 內容產品content起始 -->
+        <div class="content">
+            <div class="login">
+                <ul class="login-ul">
+                    <img src="./images/login-2x.png" alt="Loginpage-img">              
+                    <li>
+                        <form action="" method="post">
+                            <ul class="login-input">
+                                <li>
+                                    <h2>Login</h2>
+                                </li>
+                                <li>
+                                    <label for="account-number">帳號
+                                        <input type="email" name="account-number" id="account-number"
+                                            placeholder="email@example.com">
+                                    </label>
+                                    <label for="password">密碼
+                                        <input type="password" name="password" id="password" placeholder="Password">
+                                    </label>
+                                    <ul class="login-register">
+                                        <li class="login-register-a"><a href="#">忘記密碼</a></li>
+                                        <li class="login-register-button">
+                                            <a href="#"><input type="button" value="註冊"></a>
+                                            <a href="./Mypage.html"><input type="button" value="登入"></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </form>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+        <!-- 內容產品content結束 -->
+
+        <!-- footer起始 -->
+        <div class="footer">
+            <div class="footer-background">
+
+                <div class="search-input">
+                    <h2>記得 <p>訂閱以獲取更多資訊！</p>
+                    </h2>
+                    <form action="" method="post">
+                        <input type="search" placeholder="Your email address" name="search">
+                        <button class="search-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li>
+                        <h2> <a href="./index.html"><img src="./images/logo-footer-2x.png" alt="d’Perfume"></a></h2>
+                        <p>© 2020. All Rights Reserved.</p>
+                    </li>
+                    <li class="footer-menu-list">
+                        <ul>
+                            <li> <a href="./product.html">Product</a> </li>
+                            <li> <a href="#">Blog</a> </li>
+                            <li> <a href="#">Contact</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer結尾 -->
+    </div>
+    <!-- container End -->
+</body>
+
+</html>
