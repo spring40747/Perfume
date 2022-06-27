@@ -1,7 +1,0 @@
-//變數畫圈//
-@mixin circle($size,$background){
-    border-radius: 50%;
-    width: $size;
-    height: $size;
-    background: $background;  
-} 
